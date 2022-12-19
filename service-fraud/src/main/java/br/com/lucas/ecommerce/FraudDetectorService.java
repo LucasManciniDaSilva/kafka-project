@@ -2,36 +2,53 @@ package br.com.lucas.ecommerce;
 
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 
+import java.sql.SQLException;
 import java.util.Map;
+import java.util.concurrent.ExecutionException;
 
 
 public class FraudDetectorService {
 
     public static void main(String[] args) {
-        var fraudService = new FraudDetectorService();
+        var myService = new FraudDetectorService();
         try (var service = new KafkaService<>(FraudDetectorService.class.getSimpleName(),
                 "ECOMMERCE_NEW_ORDER",
-                fraudService::parse,
+                myService::parse,
                 Order.class,
                 Map.of())) {
             service.run();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        } catch (ExecutionException e) {
+            throw new RuntimeException(e);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
         }
     }
 
-    private void parse(ConsumerRecord<String, Order> record) {
-        System.out.println("------------------------------------------");
+    private final KafkaDispatcher<Order> dispatcher = new KafkaDispatcher<>();
+
+    private void parse(ConsumerRecord<String, Order> record) throws ExecutionException, InterruptedException {
+        System.out.println("------------------------------");
         System.out.println("Processing new order, checking for fraud");
         System.out.println(record.key());
-        System.out.println(record.value());
+        var order = record.value();
+        System.out.println(order);
         System.out.println(record.partition());
         System.out.println(record.offset());
         try {
             Thread.sleep(5000);
         } catch (InterruptedException e) {
-            // ignoring
+            // ignoring because its a simulation
             e.printStackTrace();
         }
-        System.out.println("Order processed");
+        if (order.isFraud()) {
+            System.out.println("Order is a fraud");
+            dispatcher.send("ECOMMERCE_ORDER_REJECTED", order.getOrderId(), order);
+        } else {
+            System.out.println("Order was accepted");
+            dispatcher.send("ECOMMERCE_ORDER_APPROVED", order.getOrderId(), order);
+        }
     }
 
 }

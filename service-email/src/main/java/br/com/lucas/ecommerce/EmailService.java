@@ -2,7 +2,9 @@ package br.com.lucas.ecommerce;
 
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 
+import java.sql.SQLException;
 import java.util.Map;
+import java.util.concurrent.ExecutionException;
 
 
 public class EmailService {
@@ -15,6 +17,12 @@ public class EmailService {
                 String.class,
                 Map.of())) {
             service.run();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        } catch (ExecutionException e) {
+            throw new RuntimeException(e);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
         }
     }
 

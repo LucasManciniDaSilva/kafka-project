@@ -5,25 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="581d6288-7c64-4006-b9df-6b543138b18f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/common-kafka/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-email/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-fraud/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-fraud/src/main/java/br/com/lucas/ecommerce/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-log/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-log/src/main/java/br/com/lucas/ecommerce/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-new-order/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-new-order/src/main/java/br/com/lucas/ecommerce/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-users/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-users/src/main/java/br/com/lucas/ecommerce/CreateUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-users/src/main/java/br/com/lucas/ecommerce/Order.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-kafka/src/main/java/br/com/lucas/ecommerce/ConsumerFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-kafka/src/main/java/br/com/lucas/ecommerce/ConsumerFunction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-kafka/src/main/java/br/com/lucas/ecommerce/KafkaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-kafka/src/main/java/br/com/lucas/ecommerce/KafkaService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/lucas/ecommerce/ConsumerFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-kafka/src/main/java/br/com/lucas/ecommerce/ConsumerFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/lucas/ecommerce/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-email/src/main/java/br/com/lucas/ecommerce/EmailService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/lucas/ecommerce/FraudDetectorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-fraud/src/main/java/br/com/lucas/ecommerce/FraudDetectorService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/lucas/ecommerce/GsonDeserializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-kafka/src/main/java/br/com/lucas/ecommerce/GsonDeserializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/lucas/ecommerce/GsonSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-kafka/src/main/java/br/com/lucas/ecommerce/GsonSerializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/lucas/ecommerce/KafkaDispatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-kafka/src/main/java/br/com/lucas/ecommerce/KafkaDispatcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/lucas/ecommerce/KafkaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-kafka/src/main/java/br/com/lucas/ecommerce/KafkaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/lucas/ecommerce/LogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-log/src/main/java/br/com/lucas/ecommerce/LogService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/lucas/ecommerce/NewOrderMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-new-order/src/main/java/br/com/lucas/ecommerce/NewOrderMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-email/src/main/java/br/com/lucas/ecommerce/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-email/src/main/java/br/com/lucas/ecommerce/EmailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-fraud/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-fraud/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-fraud/src/main/java/br/com/lucas/ecommerce/FraudDetectorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-fraud/src/main/java/br/com/lucas/ecommerce/FraudDetectorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-fraud/src/main/java/br/com/lucas/ecommerce/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-fraud/src/main/java/br/com/lucas/ecommerce/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-log/src/main/java/br/com/lucas/ecommerce/LogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-log/src/main/java/br/com/lucas/ecommerce/LogService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,15 +52,35 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "jdk.selected.JAVA_MODULE": "openjdk-18",
     "last_directory_selection": "C:/Users/Lucas/Documents/workspace/kafka-project/service-new-order/src/main/java/br/com/lucas/ecommerce",
-    "last_opened_file_path": "C:/Users/Lucas/Documents/workspace/codloadout-back-end"
+    "last_opened_file_path": "C:/Users/Lucas/Documents/workspace/codloadout-back-end",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.keymap"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="br.com.lucas.ecommerce" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="br.com.lucas.ecommerce" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.br.com.lucas.ecommerce.EmailService">
+  <component name="RunManager" selected="Application.CreateUserService">
+    <configuration name="CreateUserService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.lucas.ecommerce.CreateUserService" />
+      <module name="service-users" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.lucas.ecommerce.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FraudDetectorService1 (1)" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="br.com.lucas.ecommerce.FraudDetectorService" />
       <module name="service-fraud" />
@@ -155,6 +168,7 @@
     </configuration>
     <list>
       <item itemvalue="Application.FraudDetectorService1 (1)" />
+      <item itemvalue="Application.CreateUserService" />
       <item itemvalue="Application.br.com.lucas.ecommerce.EmailService" />
       <item itemvalue="Application.br.com.lucas.ecommerce.LogService" />
       <item itemvalue="Application.br.com.lucas.ecommerce.NewOrderMain" />
@@ -162,9 +176,10 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.br.com.lucas.ecommerce.EmailService" />
+        <item itemvalue="Application.CreateUserService" />
         <item itemvalue="Application.br.com.lucas.ecommerce.NewOrderMain" />
         <item itemvalue="Application.br.com.lucas.ecommerce.LogService" />
+        <item itemvalue="Application.br.com.lucas.ecommerce.EmailService" />
         <item itemvalue="Application.FraudDetectorService1" />
       </list>
     </recent_temporary>
