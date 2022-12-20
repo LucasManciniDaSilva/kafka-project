@@ -10,9 +10,10 @@ import java.math.BigDecimal;
 @AllArgsConstructor
 public class Order {
 
-    private String userId, orderId;
-    private BigDecimal amount;
+        private String orderId;
+        private BigDecimal amount;
 
+        private String email;
     boolean isFraud() {
         return amount.compareTo(new BigDecimal("4500")) >= 0;
     }

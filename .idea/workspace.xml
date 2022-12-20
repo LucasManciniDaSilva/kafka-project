@@ -5,18 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="581d6288-7c64-4006-b9df-6b543138b18f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/service-users/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-users/src/main/java/br/com/lucas/ecommerce/CreateUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-users/src/main/java/br/com/lucas/ecommerce/Order.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-kafka/src/main/java/br/com/lucas/ecommerce/ConsumerFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-kafka/src/main/java/br/com/lucas/ecommerce/ConsumerFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-kafka/src/main/java/br/com/lucas/ecommerce/KafkaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-kafka/src/main/java/br/com/lucas/ecommerce/KafkaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-email/src/main/java/br/com/lucas/ecommerce/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-email/src/main/java/br/com/lucas/ecommerce/EmailService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-fraud/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-fraud/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-fraud/src/main/java/br/com/lucas/ecommerce/FraudDetectorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-fraud/src/main/java/br/com/lucas/ecommerce/FraudDetectorService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-fraud/src/main/java/br/com/lucas/ecommerce/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-fraud/src/main/java/br/com/lucas/ecommerce/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-log/src/main/java/br/com/lucas/ecommerce/LogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-log/src/main/java/br/com/lucas/ecommerce/LogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-new-order/src/main/java/br/com/lucas/ecommerce/NewOrderMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-new-order/src/main/java/br/com/lucas/ecommerce/NewOrderMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-new-order/src/main/java/br/com/lucas/ecommerce/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-new-order/src/main/java/br/com/lucas/ecommerce/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-users/src/main/java/br/com/lucas/ecommerce/CreateUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-users/src/main/java/br/com/lucas/ecommerce/CreateUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-users/src/main/java/br/com/lucas/ecommerce/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-users/src/main/java/br/com/lucas/ecommerce/Order.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +46,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "jdk.selected.JAVA_MODULE": "openjdk-18",
     "last_directory_selection": "C:/Users/Lucas/Documents/workspace/kafka-project/service-new-order/src/main/java/br/com/lucas/ecommerce",
-    "last_opened_file_path": "C:/Users/Lucas/Documents/workspace/codloadout-back-end",
+    "last_opened_file_path": "C:/Users/Lucas/Downloads/ecommerce",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",

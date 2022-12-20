@@ -1,23 +1,20 @@
 package br.com.lucas.ecommerce;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
+import java.math.BigDecimal;
+
+@Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class Order {
 
+
+    private String orderId;
+    private BigDecimal amount;
     private String email;
-
-    public Order(String email) {
-        this.email = email;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    @Override
-    public String toString() {
-        return "Order{" +
-                "email='" + email + '\'' +
-                '}';
-    }
 }
